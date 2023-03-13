@@ -1,6 +1,6 @@
 import React from "react";
 
-const InputsForm = () => {
+const ProductInputsForm = () => {
   return (
     <div className='formContainer'>
       <h4 className='formTitle'>Add New Product</h4>
@@ -67,4 +67,4 @@ const InputsForm = () => {
   );
 };
 
-export default InputsForm;
+export default ProductInputsForm;

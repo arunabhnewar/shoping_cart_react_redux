@@ -1,5 +1,5 @@
 import React from "react";
-import InputsForm from "./inputsForm";
+import ProductInputsForm from "./ProductInputsForm";
 import ProductsContent from "./ProductsContent";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div className='py-16'>
       <div className='productWrapper'>
         <ProductsContent />
-        <InputsForm />
+        <ProductInputsForm />
       </div>
     </div>
   );
