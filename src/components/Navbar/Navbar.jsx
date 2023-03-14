@@ -10,7 +10,7 @@ const Navbar = () => {
   let totalItem = 0;
 
   for (let product of carts) {
-    totalItem += product.addQuantity;
+    totalItem += product.addCartQuantity;
   }
 
   return (

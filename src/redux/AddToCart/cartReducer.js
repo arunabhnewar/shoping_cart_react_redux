@@ -15,7 +15,7 @@ const cartReducer = (state = initialState, action) => {
             if (!selectedProduct) {
                 const productUpdate = {
                     ...product,
-                    addQuantity: 1,
+                    addCartQuantity: 1,
                 }
                 newState.push(productUpdate);
             } else {
@@ -25,7 +25,7 @@ const cartReducer = (state = initialState, action) => {
                     ...restProduct,
                     {
                         ...selectedProduct,
-                        addQuantity: (selectedProduct.addQuantity += 1)
+                        addCartQuantity: (selectedProduct.addCartQuantity += 1)
                     }]
             }
             return newState;
@@ -38,7 +38,7 @@ const cartReducer = (state = initialState, action) => {
                 } else {
                     return {
                         ...product,
-                        addQuantity: product.addQuantity -= 1,
+                        addCartQuantity: product.addCartQuantity -= 1,
                     }
                 }
             });

@@ -30,7 +30,8 @@ const SingleProductContent = ({ product }) => {
 
   // Quantity update on product card
   const quantityUpdated =
-    productQuantity - (carts?.find(cart => cart?.id === id)?.addQuantity || 0);
+    productQuantity -
+    (carts?.find(cart => cart?.id === id)?.addCartQuantity || 0);
 
   return (
     <>

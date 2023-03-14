@@ -14,7 +14,7 @@ const AddProductForm = () => {
     productImage: "",
     productPrice: 0,
     productQuantity: 0,
-    addQuantity: 0,
+    addCartQuantity: 0,
   });
 
   // Input data handle function
@@ -28,9 +28,9 @@ const AddProductForm = () => {
     } else if (e.target.name === "productImage") {
       setProductInfo({ ...productInfo, productImage: value });
     } else if (e.target.name === "productPrice") {
-      setProductInfo({ ...productInfo, productPrice: value });
+      setProductInfo({ ...productInfo, productPrice: Number(value) });
     } else if (e.target.name === "productQuantity") {
-      setProductInfo({ ...productInfo, productQuantity: value });
+      setProductInfo({ ...productInfo, productQuantity: Number(value) });
     }
   };
 
@@ -50,7 +50,7 @@ const AddProductForm = () => {
       productImage: "",
       productPrice: 0,
       productQuantity: 0,
-      addQuantity: 0,
+      addCartQuantity: 0,
     });
   }
 
